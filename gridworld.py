@@ -59,6 +59,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         """
         if state == self.grid.terminalState:
             return ()
+        print()
         x,y = state
         if type(self.grid[x][y]) == int:
             return ('exit',)

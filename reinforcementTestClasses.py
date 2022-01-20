@@ -675,6 +675,7 @@ class Question8Test(testClasses.TestCase):
             return self.testPass(grades)
         else:
             self.addMessage("Solution is not correct.")
+            print()
             self.addMessage("   Student solution: %s" % (studentSolution,))
             return self.testFail(grades)
 
